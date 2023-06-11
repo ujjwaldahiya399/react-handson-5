@@ -1,8 +1,8 @@
 import  { Component } from 'react'
-import Example from './Components/Example';
+import Example from './Components/ExampleOfPureComp';
 import './App.css';
-
-export default class App extends Component {
+import Hoc from './Components/ExampleOfHigherOrderComp';
+ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,7 +22,10 @@ export default class App extends Component {
         <div>
           <Example someData={this.state.firstName} />
         </div>
+        <h2>HOC Example</h2>
       </div>
     );
   }
 }
+App = Hoc(App);
+export default App;
