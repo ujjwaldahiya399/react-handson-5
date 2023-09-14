@@ -11,6 +11,8 @@ export default class ExampleOfPureComp extends PureComponent {
     return (
       <div className="number">
         <h1>Pure Component</h1>
+        <h2>Defination of pure component</h2>
+        <p>A Pure Component in React is a stateless functional component that solely relies on its input props to determine rendering, devoid of internal state and lifecycle methods. It offers performance benefits by minimizing unnecessary re-renders and promoting a functional, declarative coding style.</p>
         <h2>Count: {this.state.count}</h2>
         <button onClick={() => this.setState({ count: this.state.count + 1 })}>
           Click me to Increase{" "}
