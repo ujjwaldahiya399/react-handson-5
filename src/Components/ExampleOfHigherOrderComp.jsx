@@ -14,6 +14,8 @@ const ExampleOfHigherOrderComp = (WrappedComponent) => {
 
     return (
       <div>
+        <h2>Defination of HOC</h2>
+        <p>It allows us to enhance or extend the functionality of a component by wrapping it with another component. In essence, a Higher Order Component is a function that takes one component and returns another component with additional features, behaviors, or props.</p>
         <WrappedComponent
           Count={Count}
           handleInc={handleInc}
